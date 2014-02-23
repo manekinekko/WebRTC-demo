@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>WebRTC</title>
+		<script src="http://localhost:8888/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" charset="utf-8"></script>
+		<script src="js/webrtc.js" charset="utf-8"></script>
+		<style>
+		#client-video, #remote-video {
+			background: black;
+		}
+		#remote-video {			
+			top: -5px;
+			position: relative;
+			width: 150px;
+			left: -160px;
+			border: 0px none;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<h1>WebRTC demo</h1>
+		
+		<video id="client-video" width="600" height="500" autoplay ></video>
+		<canvas id="remote-video" width="200" height="100" ></canvas>
+		<img id="receive" width="200" height="100" ></img>
+		
+	</body>
+</html>
